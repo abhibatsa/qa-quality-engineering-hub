@@ -1,0 +1,50 @@
+<svg width="680" height="440" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Priority vs severity matrix</title>
+<desc>Shows a two by two matrix with severity on the vertical axis and priority on the horizontal axis, illustrating four quadrants: high severity plus high priority (crash affecting all users at checkout, fix immediately), high severity plus low priority (crash in rarely used internal admin tool), low severity plus high priority (misspelled brand name on homepage during a major launch), and low severity plus low priority (minor cosmetic issue on a rarely visited page).</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.axis{font-size:12px;font-weight:600;fill:#F5F5F5;}
+.lbl{font-size:11px;font-weight:600;fill:#F5F5F5;}
+.sub{font-size:9.5px;fill:#C9C9C9;}
+.q1{fill:#3A1E1E;stroke:#D97070;stroke-width:1;}
+.q2{fill:#3A2A10;stroke:#E0A33D;stroke-width:1;}
+.q3{fill:#3A2A10;stroke:#E0A33D;stroke-width:1;}
+.q4{fill:#173829;stroke:#4CAF8C;stroke-width:1;}
+</style>
+<rect x="0" y="0" width="680" height="440" fill="#0D1117"/>
+
+<text class="axis" x="360" y="26" text-anchor="middle">Severity (technical impact) vs Priority (business urgency)</text>
+
+<text class="axis" x="30" y="90" text-anchor="middle" transform="rotate(-90 30 90)">High Severity</text>
+<text class="axis" x="30" y="330" text-anchor="middle" transform="rotate(-90 30 330)">Low Severity</text>
+<text class="axis" x="230" y="410" text-anchor="middle">Low Priority</text>
+<text class="axis" x="500" y="410" text-anchor="middle">High Priority</text>
+
+<rect class="q2" x="70" y="55" width="290" height="150" rx="6"/>
+<text class="lbl" x="215" y="85" text-anchor="middle">High Severity, Low Priority</text>
+<text class="sub" x="215" y="115" text-anchor="middle">Crash in a rarely-used internal</text>
+<text class="sub" x="215" y="130" text-anchor="middle">admin tool, 2 employees, monthly use</text>
+<text class="sub" x="215" y="155" text-anchor="middle">Technically severe, not urgent</text>
+<text class="sub" x="215" y="170" text-anchor="middle">relative to customer-facing work</text>
+
+<rect class="q1" x="370" y="55" width="290" height="150" rx="6"/>
+<text class="lbl" x="515" y="85" text-anchor="middle">High Severity, High Priority</text>
+<text class="sub" x="515" y="115" text-anchor="middle">Crash affecting all users</text>
+<text class="sub" x="515" y="130" text-anchor="middle">at checkout</text>
+<text class="sub" x="515" y="155" text-anchor="middle">Fix immediately —</text>
+<text class="sub" x="515" y="170" text-anchor="middle">both dimensions agree</text>
+
+<rect class="q4" x="70" y="215" width="290" height="150" rx="6"/>
+<text class="lbl" x="215" y="245" text-anchor="middle">Low Severity, Low Priority</text>
+<text class="sub" x="215" y="275" text-anchor="middle">Minor cosmetic misalignment</text>
+<text class="sub" x="215" y="290" text-anchor="middle">on a rarely-visited settings page</text>
+<text class="sub" x="215" y="315" text-anchor="middle">Fix when convenient,</text>
+<text class="sub" x="215" y="330" text-anchor="middle">low stakes either way</text>
+
+<rect class="q3" x="370" y="215" width="290" height="150" rx="6"/>
+<text class="lbl" x="515" y="245" text-anchor="middle">Low Severity, High Priority</text>
+<text class="sub" x="515" y="275" text-anchor="middle">Misspelled brand name on the</text>
+<text class="sub" x="515" y="290" text-anchor="middle">homepage during a major press launch</text>
+<text class="sub" x="515" y="315" text-anchor="middle">Cosmetically minor, but</text>
+<text class="sub" x="515" y="330" text-anchor="middle">urgent given the context</text>
+</svg>

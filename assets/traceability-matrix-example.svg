@@ -1,0 +1,59 @@
+<svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Requirements traceability matrix example</title>
+<desc>Shows a sample traceability matrix table mapping requirement IDs to their descriptions, linked test case IDs, and linked defect IDs, with one requirement row highlighted in red to show zero test coverage as a gap to catch.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.hdr{font-size:11px;font-weight:700;fill:#F5F5F5;}
+.cell{font-size:10px;fill:#D0D0D0;}
+.headrow{fill:#241E3D;}
+.row{fill:#161B22;}
+.gap{fill:#3A1E1E;}
+line{stroke:#30363D;stroke-width:1;}
+</style>
+<rect x="0" y="0" width="720" height="300" fill="#0D1117"/>
+<text class="hdr" x="360" y="26" text-anchor="middle" font-size="13">Requirements Traceability Matrix</text>
+
+<rect class="headrow" x="20" y="45" width="680" height="34"/>
+<text class="hdr" x="35" y="66">Req ID</text>
+<text class="hdr" x="130" y="66">Requirement</text>
+<text class="hdr" x="380" y="66">Test Case(s)</text>
+<text class="hdr" x="530" y="66">Defect(s)</text>
+<text class="hdr" x="630" y="66">Status</text>
+
+<rect class="row" x="20" y="79" width="680" height="34"/>
+<text class="cell" x="35" y="100">REQ-101</text>
+<text class="cell" x="130" y="100">User can reset password via email</text>
+<text class="cell" x="380" y="100">TC-045, TC-046</text>
+<text class="cell" x="530" y="100">—</text>
+<text class="cell" x="630" y="100" fill="#4CAF8C">✓ Covered</text>
+
+<rect class="row" x="20" y="113" width="680" height="34"/>
+<text class="cell" x="35" y="134">REQ-102</text>
+<text class="cell" x="130" y="134">Password must meet complexity rules</text>
+<text class="cell" x="380" y="134">TC-047</text>
+<text class="cell" x="530" y="134">BUG-212</text>
+<text class="cell" x="630" y="134" fill="#4CAF8C">✓ Covered</text>
+
+<rect class="gap" x="20" y="147" width="680" height="34"/>
+<text class="cell" x="35" y="168">REQ-103</text>
+<text class="cell" x="130" y="168">Account locks after 5 failed attempts</text>
+<text class="cell" x="380" y="168" fill="#D97070">— none —</text>
+<text class="cell" x="530" y="168">—</text>
+<text class="cell" x="630" y="168" fill="#D97070">✕ Gap</text>
+
+<rect class="row" x="20" y="181" width="680" height="34"/>
+<text class="cell" x="35" y="202">REQ-104</text>
+<text class="cell" x="130" y="202">Session expires after 30 min idle</text>
+<text class="cell" x="380" y="202">TC-050</text>
+<text class="cell" x="530" y="202">—</text>
+<text class="cell" x="630" y="202" fill="#4CAF8C">✓ Covered</text>
+
+<line x1="20" y1="45" x2="700" y2="45"/>
+<line x1="20" y1="215" x2="700" y2="215"/>
+<line x1="120" y1="45" x2="120" y2="215"/>
+<line x1="370" y1="45" x2="370" y2="215"/>
+<line x1="520" y1="45" x2="520" y2="215"/>
+<line x1="620" y1="45" x2="620" y2="215"/>
+
+<text class="cell" x="360" y="250" text-anchor="middle" fill="#D97070">REQ-103 has zero linked test cases — exactly the kind of gap an RTM exists to surface before release, not after.</text>
+</svg>

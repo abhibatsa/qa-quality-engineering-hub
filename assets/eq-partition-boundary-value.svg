@@ -1,0 +1,48 @@
+<svg width="720" height="260" viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Equivalence partitioning and boundary value analysis</title>
+<desc>Shows a number line for an age field accepting 18 to 65, split into three equivalence partitions (below range, valid range, above range), with boundary value test points marked at 17, 18, 19, 64, 65, and 66 clustered right at each boundary.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.lbl{font-size:11px;font-weight:600;fill:#F5F5F5;}
+.sub{font-size:9.5px;fill:#C9C9C9;}
+.invalid{fill:#3A1E1E;stroke:#D97070;stroke-width:1;}
+.valid{fill:#173829;stroke:#4CAF8C;stroke-width:1;}
+.point{fill:#E0A33D;}
+</style>
+<rect x="0" y="0" width="720" height="260" fill="#0D1117"/>
+<text class="lbl" x="360" y="26" text-anchor="middle" font-size="13">Age field: valid range 18–65</text>
+
+<rect class="invalid" x="30" y="60" width="160" height="50" rx="4"/>
+<text class="sub" x="110" y="80" text-anchor="middle">Partition: below range</text>
+<text class="sub" x="110" y="95" text-anchor="middle">(&lt; 18)</text>
+
+<rect class="valid" x="200" y="60" width="320" height="50" rx="4"/>
+<text class="sub" x="360" y="80" text-anchor="middle">Partition: valid range</text>
+<text class="sub" x="360" y="95" text-anchor="middle">(18–65)</text>
+
+<rect class="invalid" x="530" y="60" width="160" height="50" rx="4"/>
+<text class="sub" x="610" y="80" text-anchor="middle">Partition: above range</text>
+<text class="sub" x="610" y="95" text-anchor="middle">(&gt; 65)</text>
+
+<circle class="point" cx="175" cy="150" r="6"/>
+<text class="sub" x="175" y="175" text-anchor="middle">17</text>
+<circle class="point" cx="200" cy="150" r="6"/>
+<text class="sub" x="200" y="175" text-anchor="middle">18</text>
+<circle class="point" cx="225" cy="150" r="6"/>
+<text class="sub" x="225" y="175" text-anchor="middle">19</text>
+
+<circle class="point" cx="495" cy="150" r="6"/>
+<text class="sub" x="495" y="175" text-anchor="middle">64</text>
+<circle class="point" cx="520" cy="150" r="6"/>
+<text class="sub" x="520" y="175" text-anchor="middle">65</text>
+<circle class="point" cx="545" cy="150" r="6"/>
+<text class="sub" x="545" y="175" text-anchor="middle">66</text>
+
+<line x1="175" y1="110" x2="175" y2="144" stroke="#E0A33D" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="225" y1="110" x2="225" y2="144" stroke="#E0A33D" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="495" y1="110" x2="495" y2="144" stroke="#E0A33D" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="545" y1="110" x2="545" y2="144" stroke="#E0A33D" stroke-width="1" stroke-dasharray="3,2"/>
+
+<text class="sub" x="360" y="210" text-anchor="middle">Equivalence partitioning picks which values matter (one per partition, e.g. 40).</text>
+<text class="sub" x="360" y="228" text-anchor="middle">Boundary value analysis clusters test points right at each edge, where bugs actually concentrate.</text>
+</svg>
