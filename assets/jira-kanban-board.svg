@@ -1,0 +1,48 @@
+<svg width="760" height="320" viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Jira-style Kanban workflow board</title>
+<desc>Shows a Kanban board with four columns: To Do, In Progress, In Review, and Done, each containing a few sample issue cards, illustrating that the board is a filtered view over underlying issues rather than the data itself.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.col{font-size:12px;font-weight:700;fill:#F5F5F5;}
+.card{fill:#241E3D;stroke:#8C7DE0;stroke-width:1;}
+.cardtext{font-size:9.5px;fill:#D0D0D0;}
+.tag{font-size:8px;fill:#E0A33D;font-weight:600;}
+.colbg{fill:#161B22;stroke:#30363D;stroke-width:1;}
+</style>
+<rect x="0" y="0" width="760" height="320" fill="#0D1117"/>
+<text class="col" x="380" y="26" text-anchor="middle" font-size="13">A board is a filtered VIEW over issues — not the data itself</text>
+
+<rect class="colbg" x="20" y="50" width="170" height="250" rx="6"/>
+<text class="col" x="105" y="72" text-anchor="middle">To Do</text>
+<rect class="card" x="32" y="85" width="146" height="50" rx="4"/>
+<text class="cardtext" x="42" y="103">BUG-341</text>
+<text class="cardtext" x="42" y="117">Lockout triggers</text>
+<text class="tag" x="42" y="130">Critical</text>
+<rect class="card" x="32" y="145" width="146" height="50" rx="4"/>
+<text class="cardtext" x="42" y="163">BUG-352</text>
+<text class="cardtext" x="42" y="177">Typo on receipt page</text>
+<text class="tag" x="42" y="190">Low</text>
+
+<rect class="colbg" x="205" y="50" width="170" height="250" rx="6"/>
+<text class="col" x="290" y="72" text-anchor="middle">In Progress</text>
+<rect class="card" x="217" y="85" width="146" height="50" rx="4"/>
+<text class="cardtext" x="227" y="103">BUG-338</text>
+<text class="cardtext" x="227" y="117">Checkout 500 error</text>
+<text class="tag" x="227" y="130">Critical</text>
+
+<rect class="colbg" x="390" y="50" width="170" height="250" rx="6"/>
+<text class="col" x="475" y="72" text-anchor="middle">In Review</text>
+<rect class="card" x="402" y="85" width="146" height="50" rx="4"/>
+<text class="cardtext" x="412" y="103">BUG-329</text>
+<text class="cardtext" x="412" y="117">Session timeout early</text>
+<text class="tag" x="412" y="130">High</text>
+
+<rect class="colbg" x="575" y="50" width="165" height="250" rx="6"/>
+<text class="col" x="657" y="72" text-anchor="middle">Done</text>
+<rect class="card" x="587" y="85" width="140" height="50" rx="4"/>
+<text class="cardtext" x="597" y="103">BUG-301</text>
+<text class="cardtext" x="597" y="117">Password reset fail</text>
+<text class="tag" x="597" y="130">Medium</text>
+
+<text class="cardtext" x="380" y="298" text-anchor="middle" font-size="10">Same underlying issues could be filtered/grouped a completely different way — by severity, by sprint, by assignee.</text>
+</svg>
