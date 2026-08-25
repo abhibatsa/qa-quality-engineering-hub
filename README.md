@@ -93,6 +93,16 @@ a QA sub-topic.
 - [AI Test Engineering Career Prep](https://github.com/abhibatsa/ai-test-engineering-career-prep) *(private)* — AI-QA career-transition depth
 - [LLD & OOD Interview Prep](https://github.com/abhibatsa/lld-and-ood-interview-prep) — design patterns referenced in the framework-development section above
 
+## 📚 Books
+
+- [Foundations of Software Testing: ISTQB Certification](https://link.amazon/B06ebBC0f)
+- [Data Structures And Algorithms Made Easy -  Narasimha Karumanchi](https://amzn.to/45OnH5L)
+- [Cracking The Coding Interview: 189 Programming Questions and Solutions-Paperback [Paperback] Gayle Laakmann McDowell](https://amzn.to/4xWQocB)
+- [Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software, Second Edition (Grayscale Indian Edition) -  Eric Freeman](https://amzn.to/4qzMFPM)
+- [Clean Code : Import Edition :Multi colour book: A Handbook of Agile Software Craftsmanship (Robert C. Martin Series)](https://amzn.to/45IWf9D)
+- [Head First Java: A Brain-Friendly Guide, Third Edition (Grayscale Indian Edition)](https://link.amazon/B061FY2Qn)
+- [Automate the Boring Stuff with Python, 3rd Edition: Practical Programming for Total Beginners](https://link.amazon/B0fbWI6Ot)
+
 ## 🤝 Contributing
 See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
