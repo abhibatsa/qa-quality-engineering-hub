@@ -59,6 +59,7 @@ Before assuming a bug is genuinely device/OS-version-specific:
   described menu path doesn't match what you see, search current docs
   for the equivalent feature rather than assuming it was removed
 
-**[Official Android Website](https://developer.android.com/studio/debug)** for more information on debugging Android App.
+For more information on debugging Android App - [Official Android Website](https://developer.android.com/studio/debug).
+
 ---
 *Part of [QA, Quality Engineering & Quality Management Hub](../README.md) → [Web, Mobile & API Testing](./README.md)*
