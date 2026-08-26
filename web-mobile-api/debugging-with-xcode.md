@@ -20,6 +20,20 @@ generated crash report/symbolicated stack trace) is the first place to
 look — same discipline as checking Logcat first on Android, different
 tool, same underlying instinct.
 
+**Using macOS Console App:**
+This approach captures full system-level events, background activity, 
+and unified os_log outputs.
+
+1. Connect your iOS device to your Mac using a USB cable.
+2. Unlock your iPhone/iPad and tap Trust if the "Trust This Computer" prompt appears.
+3. Open the Console app on your Mac (Press Cmd + Space, type "Console", and hit Enter).
+4. In the left sidebar, click on your iOS Device under the Devices section.
+5. Click Start (or "Start streaming") in the top toolbar to begin reading the log feed.
+6. Crucial Step: Go to the top menu bar, select Action, and check both Include Info Messages and Include Debug Messages.
+If you skip this, Apple hides standard application logs by default.
+
+// Reproduce your issue, use the top-right Search bar to filter by your app's name or process, and copy/paste the entries into a text editor to save them. //
+
 ## Instruments — for performance and resource-usage investigation
 
 A profiling toolset for deeper investigation beyond "what happened" into
@@ -50,6 +64,8 @@ fully replicate real hardware for these categories.
 - Same version-drift caution as Android Studio — if a described menu
   path doesn't match current Xcode, search current docs for the
   equivalent rather than assuming the feature disappeared
+
+For more information on debugging - [XCode/iOS Debugging](https://developer.apple.com/documentation/xcode/debugging)
 
 ---
 *Part of [QA, Quality Engineering & Quality Management Hub](../README.md) → [Web, Mobile & API Testing](./README.md)*
