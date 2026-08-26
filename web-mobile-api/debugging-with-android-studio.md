@@ -4,12 +4,16 @@
 
 ---
 
-For Android app testing, two Android Studio tools account for most
+For Android app testing, first you have to connect your simulator or real device
+to your Android Studio. This is done through ADB(Android Debug Bridge). 
+More details can be found at their official website [Android Debug Bridge](https://developer.android.com/tools/adb).
+
+We will discuss here two Android Studio tools that account for most
 real debugging value — Logcat and the Layout Inspector. Exact menu
 locations shift between Android Studio versions; the concepts below stay
 stable regardless.
 
-## Logcat — the Android equivalent of browser Console + Network combined
+## [Logcat](https://developer.android.com/studio/debug/logcat) — the Android equivalent of browser Console + Network combined
 
 Every log line from the app (and the OS) streams here — exceptions,
 network calls (if the app logs them), custom debug output. The single
@@ -22,7 +26,7 @@ logging.
 other detail, the first move is always Logcat filtered to Errors for
 that package — the stack trace is almost always sitting right there.
 
-## Layout Inspector — for rendering/layout bugs specifically
+## [Layout Inspector](https://developer.android.com/studio/debug/layout-inspector) — for rendering/layout bugs specifically
 
 Shows the actual rendered view hierarchy on a connected device/emulator
 in real time — useful for the mobile equivalent of the web "is this a
@@ -55,5 +59,6 @@ Before assuming a bug is genuinely device/OS-version-specific:
   described menu path doesn't match what you see, search current docs
   for the equivalent feature rather than assuming it was removed
 
+**[Official Android Website](https://developer.android.com/studio/debug)** for more information on debugging Android App.
 ---
 *Part of [QA, Quality Engineering & Quality Management Hub](../README.md) → [Web, Mobile & API Testing](./README.md)*
