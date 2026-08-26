@@ -1,0 +1,40 @@
+<svg width="740" height="300" viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Browser dev tools panels for testing</title>
+<desc>Shows four browser developer tools panels relevant to testing: Elements for inspecting the rendered DOM, Console for JavaScript errors, Network for request and response inspection, and Application/Storage for cookies and local storage, each with its primary testing use case.</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.lbl{font-size:13px;font-weight:700;fill:#F5F5F5;}
+.sub{font-size:10px;fill:#C9C9C9;}
+.box{stroke-width:1;}
+.p1{fill:#241E3D;stroke:#8C7DE0;}
+.p2{fill:#3A1E1E;stroke:#D97070;}
+.p3{fill:#173829;stroke:#4CAF8C;}
+.p4{fill:#3A2A10;stroke:#E0A33D;}
+</style>
+<rect x="0" y="0" width="740" height="300" fill="#0D1117"/>
+<text class="lbl" x="370" y="26" text-anchor="middle" font-size="14">Browser dev tools — the panels that matter for testing</text>
+
+<rect class="box p1" x="20" y="50" width="340" height="100" rx="8"/>
+<text class="lbl" x="190" y="75" text-anchor="middle">Elements</text>
+<text class="sub" x="190" y="98" text-anchor="middle">Inspect the actual rendered DOM</text>
+<text class="sub" x="190" y="114" text-anchor="middle">Confirm rendering vs. data issues,</text>
+<text class="sub" x="190" y="128" text-anchor="middle">find stable automation locators</text>
+
+<rect class="box p2" x="380" y="50" width="340" height="100" rx="8"/>
+<text class="lbl" x="550" y="75" text-anchor="middle">Console</text>
+<text class="sub" x="550" y="98" text-anchor="middle">JavaScript errors surface here</text>
+<text class="sub" x="550" y="114" text-anchor="middle">often BEFORE the visible symptom —</text>
+<text class="sub" x="550" y="128" text-anchor="middle">check here before assuming "broken feature"</text>
+
+<rect class="box p3" x="20" y="165" width="340" height="100" rx="8"/>
+<text class="lbl" x="190" y="190" text-anchor="middle">Network</text>
+<text class="sub" x="190" y="213" text-anchor="middle">Every request/response the page makes</text>
+<text class="sub" x="190" y="229" text-anchor="middle">The single most valuable panel for</text>
+<text class="sub" x="190" y="243" text-anchor="middle">triaging "frontend bug or backend bug"</text>
+
+<rect class="box p4" x="380" y="165" width="340" height="100" rx="8"/>
+<text class="lbl" x="550" y="190" text-anchor="middle">Application / Storage</text>
+<text class="sub" x="550" y="213" text-anchor="middle">Cookies, local storage, session storage</text>
+<text class="sub" x="550" y="229" text-anchor="middle">Essential for login-state, feature-flag,</text>
+<text class="sub" x="550" y="243" text-anchor="middle">and client-side caching bugs</text>
+</svg>

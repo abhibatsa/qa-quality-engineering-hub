@@ -1,0 +1,48 @@
+<svg width="700" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Mock API architecture for testing</title>
+<desc>Shows a test suite calling a mock API server instead of the real backend, with the mock server configured to return specific canned scenarios on demand: a success response, a 404 not found response, a 500 server error response, and a simulated timeout, illustrating how error conditions hard to trigger against a real backend become trivial against a mock.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#9CA3AF" stroke-width="1.5"/></marker></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#E6E6E6;}
+.lbl{font-size:12px;font-weight:600;fill:#F5F5F5;}
+.sub{font-size:9.5px;fill:#C9C9C9;}
+.box{stroke-width:1;}
+.test{fill:#241E3D;stroke:#8C7DE0;}
+.mock{fill:#3A2A10;stroke:#E0A33D;}
+.ok{fill:#173829;stroke:#4CAF8C;}
+.err{fill:#3A1E1E;stroke:#D97070;}
+line{stroke:#9CA3AF;stroke-width:1.3;marker-end:url(#a);}
+</style>
+<rect x="0" y="0" width="700" height="260" fill="#0D1117"/>
+
+<rect class="box test" x="20" y="90" width="150" height="60" rx="8"/>
+<text class="lbl" x="95" y="112" text-anchor="middle">Test Suite</text>
+<text class="sub" x="95" y="132" text-anchor="middle">calls mock, not real API</text>
+
+<line x1="170" y1="120" x2="230" y2="120"/>
+
+<rect class="box mock" x="230" y="70" width="160" height="100" rx="8"/>
+<text class="lbl" x="310" y="95" text-anchor="middle">Mock API Server</text>
+<text class="sub" x="310" y="118" text-anchor="middle">configurable, on-demand</text>
+<text class="sub" x="310" y="133" text-anchor="middle">scenario selection</text>
+<text class="sub" x="310" y="150" text-anchor="middle">e.g. GET /orders/not-found</text>
+
+<line x1="390" y1="90" x2="450" y2="60"/>
+<rect class="box ok" x="450" y="35" width="130" height="40" rx="6"/>
+<text class="sub" x="515" y="59" text-anchor="middle">200 success</text>
+
+<line x1="390" y1="105" x2="450" y2="100"/>
+<rect class="box err" x="450" y="80" width="130" height="40" rx="6"/>
+<text class="sub" x="515" y="104" text-anchor="middle">404 not found</text>
+
+<line x1="390" y1="135" x2="450" y2="145"/>
+<rect class="box err" x="450" y="125" width="130" height="40" rx="6"/>
+<text class="sub" x="515" y="149" text-anchor="middle">500 server error</text>
+
+<line x1="390" y1="150" x2="450" y2="190"/>
+<rect class="box err" x="450" y="170" width="130" height="40" rx="6"/>
+<text class="sub" x="515" y="194" text-anchor="middle">simulated timeout</text>
+
+<text class="sub" x="300" y="225" text-anchor="middle">Error scenarios that are genuinely hard to trigger against a real backend become trivial —</text>
+<text class="sub" x="300" y="240" text-anchor="middle">just call the route built to return that exact case, on demand, every time.</text>
+</svg>
